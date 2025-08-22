@@ -1,0 +1,245 @@
+nav {
+    display: flex;
+    justify-content: right; 
+    gap: 0.010rem;
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+ 
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #000102; 
+    font-weight: 700;
+    padding: 0.5rem 1rem;  
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 600;
+    font-style: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;   
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+
+    
+.body {
+  background-color: #e5e5e5;
+  font-family: "lavishly yours", cursive;
+    width: 1000px;
+  margin: 0 auto;
+  font-size: large;
+  font-weight: 600;
+  font-style: oblique;
+}
+ 
+
+nav a.about1 {
+    font-weight: bold;
+    color: #0d9488; 
+    text-decoration: line-through;
+  
+}
+
+nav a.contact1 {
+    font-weight: bold;
+    color: #ea3333; 
+    text-decoration: line-through;
+}
+
+
+nav a.project1 {
+    font-weight: bold;
+    color: #d97706; 
+    text-decoration: line-through;
+}
+.photo {
+position: center;
+}
+
+
+.container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px; 
+}
+
+        /* Header Section */
+header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #585e63;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+}
+
+.profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+}
+
+header h1 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            margin: 0;
+            margin-bottom: 10px;
+           
+}
+
+header p {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin: 0;
+}
+
+        /* Main Content Sections */
+.section {
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+            
+
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+}
+
+        /* About Me Paragraph */
+.about-me p {
+            font-size: 1em;
+            text-align: justify;
+}
+
+        /* Skills Section */
+.skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+}
+
+.skill-item {
+            background-color: #ecf0f1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #555;
+            transition: transform 0.2s ease-in-out;
+}
+
+.skill-item:hover {
+            transform: translateY(-5px);
+            background-color: #dbe4e6;
+}
+
+.experience p {
+            font-size: 1em;
+            text-align: justify;
+}
+
+        /* Social Links */
+.social-links {
+            text-align: center;
+            margin-top: 40px;
+}
+
+.social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #3498db;
+            font-size: 2em;
+            transition: color 0.3s;
+            
+}
+
+.social-links a:hover {
+            color: #2980b9;
+}
+
+        /* Footer */
+footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #777;
+}
+
+        /* Responsive Design */
+@media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 30px 0;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .section {
+                padding: 20px;
+            }
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #555;
+}

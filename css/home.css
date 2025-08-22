@@ -1,0 +1,131 @@
+
+
+:root {
+  --background-color: #e5e5e5;
+  --main-text-color: #333;
+  --button-hover-transition: 0.3s ease-in-out;
+
+  /* Button Colors */
+  --indigo-color: #14b8a6;
+  --indigo-hover: #0d9488;
+  --amber-color: #f59e0b;
+  --amber-hover: #d97706;
+  --purple-color: #ea1919;
+  --purple-hover: #bb2116;
+  --cyan-color: #06b6d4;
+  --cyan-hover: #0891b2;
+}
+
+body {
+  font-family: "Lavishly Yours", cursive;
+  line-height: 1.6;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main Content and Section Styling */
+.main-content {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 150px;
+}
+
+
+/* Button Grid and individual button styling */
+.button-grid {
+  display: grid;
+  /* Updated to display 2 columns, each taking an equal fraction of space */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.nav-button {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  text-decoration: none;
+  color: #1a202c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform var(--button-hover-transition), box-shadow var(--button-hover-transition);
+}
+
+.nav-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Icon Styling */
+.nav-button-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  transition: transform var(--button-hover-transition);
+}
+
+.nav-button:hover .nav-button-icon {
+  transform: scale(1.1);
+}
+
+/* Text Styling */
+.nav-button-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.nav-button-description {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* Button Colors */
+.nav-button-indigo .nav-button-icon { color: var(--indigo-color); }
+.nav-button-indigo:hover { background-color: var(--indigo-hover); color: white; }
+.nav-button-indigo:hover .nav-button-icon { color: white; }
+.nav-button-indigo:hover .nav-button-description { color: #e2e8f0; }
+
+.nav-button-teal .nav-button-icon { color: var(--teal-color); }
+.nav-button-teal:hover { background-color: var(--teal-hover); color: white; }
+.nav-button-teal:hover .nav-button-icon { color: white; }
+.nav-button-teal:hover .nav-button-description { color: #e2e8f0; }
+
+.nav-button-rose .nav-button-icon { color: var(--rose-color); }
+.nav-button-rose:hover { background-color: var(--rose-hover); color: white; }
+.nav-button-rose:hover .nav-button-icon { color: white; }
+.nav-button-rose:hover .nav-button-description { color: #ffe4e6; }
+
+.nav-button-amber .nav-button-icon { color: var(--amber-color); }
+.nav-button-amber:hover { background-color: var(--amber-hover); color: white; }
+.nav-button-amber:hover .nav-button-icon { color: white; }
+.nav-button-amber:hover .nav-button-description { color: #fffbeb; }
+
+.nav-button-purple .nav-button-icon { color: var(--purple-color); }
+.nav-button-purple:hover { background-color: var(--purple-hover); color: white; }
+.nav-button-purple:hover .nav-button-icon { color: white; }
+.nav-button-purple:hover .nav-button-description { color: #f3e8ff; }
+
+.nav-button-cyan .nav-button-icon { color: var(--cyan-color); }
+.nav-button-cyan:hover { background-color: var(--cyan-hover); color: white; }
+.nav-button-cyan:hover .nav-button-icon { color: white; }
+.nav-button-cyan:hover .nav-button-description { color: #e0f7fa; }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .nav-button {
+    padding: 20px;
+  }
+  /* Stacks buttons on a single column for screens 600px or smaller */
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+}
