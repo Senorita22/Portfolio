@@ -82,9 +82,10 @@ header {
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #fff;
+            border: 5px  #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 20px;
+            
 }
 
 header h1 {
