@@ -243,3 +243,17 @@ footer {
 .project-card .btn:hover {
   background-color: #555;
 }
+
+.project-image-placeholder {
+    /* This makes the placeholder visible */
+    width: 100%; /* Take up full width of the card */
+    height: 150px; /* Adjust height as needed */
+    background-color: #e0e0e0; /* A light gray background */
+    margin-bottom: 15px;
+    display: flex; /* For centering text if you want to add "Image Here" */
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
